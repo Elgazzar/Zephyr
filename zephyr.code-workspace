@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../zephyr"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"kernel.h": "c",
+			"locale": "c"
+		}
+	}
+}
