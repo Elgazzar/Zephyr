@@ -15,7 +15,7 @@
 #define LED0_NODE DT_ALIAS(led0)
 #define LED1_NODE DT_ALIAS(led1)
 #define LED2_NODE DT_ALIAS(led2)
-#define BUTTON_NODE DT_ALIAS(my_button)
+#define BUTTON_NODE DT_ALIAS(sw0)
 
 #define TIMER_MS 1000
 
@@ -82,7 +82,7 @@ int main(void)
 		/*Print led state to the console*/
 		printf("LED state: %s\n", led_state ? "ON" : "OFF");
 		state = gpio_pin_get_dt(&btn);
-		printf("Button state: %s\n", state ? "Pressed" : "Not Pressed");
+		printf("Button state: %s\n", state ? "Not Pressed" : "Pressed");
 		/*sleep for 1 sec*/
 		k_msleep(SLEEP_TIME_MS);
 	}
